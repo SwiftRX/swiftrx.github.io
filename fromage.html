@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>fromage</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+	</head>
+	<body>
+		<center>
+			<h1 style="text-decoration: underline;">Fromage</h1>
+			<a href="#" onclick="fromage()">
+				<img src="https://www.stickpng.com/assets/images/580b57fbd9996e24bc43c0cf.png" alt="fromage1" id="fromage1">
+				<img src="https://cdn.pixabay.com/photo/2017/09/01/14/51/cheese-2704448_960_720.png" alt="fromage2" id="fromage2" style="display: none">
+			</a>
+		</center>
+
+		<script type="text/javascript">
+			var field = true;
+			function fromage(){
+				if(field){ 
+					document.getElementById("fromage1").style = "display: none;"
+					document.getElementById("fromage2").style = "display: block;"
+				} else { 
+					document.getElementById("fromage2").style = "display: none;"
+					document.getElementById("fromage1").style = "display: block;"
+				}
+				field = !field;
+			}
+		</script>
+	</body>
+</html>
